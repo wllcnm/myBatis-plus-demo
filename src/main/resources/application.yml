@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mp?serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: 123456789
+logging:
+  level:
+    root: info
+mybatis-plus:
+  type-aliases-package: com.example.mybatisplus.pojo
+  #指定mapper位置
+  mapper-locations: classpath*:mybatis/mapper/*.xml
+  configuration:
+    #驼峰命名规则
+    map-underscore-to-camel-case: true
